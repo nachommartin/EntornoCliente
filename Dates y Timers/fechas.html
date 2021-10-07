@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechas</title>
+    <style>
+        body {background-color: darkgoldenrod;}
+        h1 {color: whitesmoke; align-content: center;}
+        label {color: whitesmoke;   }
+        p {color:whitesmoke}
+        ul {color:whitesmoke}
+        h3 {color:whitesmoke}
+    </style>
+</head>
+<body onload="reloj()">
+    <div id="Parte1">
+        <h1>Primer ejercicio de fechas</h1><br><br>
+        <label for="fecha">Indica la fecha (Año, mes y día) en valores numéricos y separados por comas</label>
+        <input type="text" id="fecha">
+        <label for="hora">Indica la hora(HH:MM)</label>
+        <input type="text" id="hour">
+        <input type="submit" id="bot1" value="Click">
+        <p id="parraf1"></p>
+    </div>
+<br><br>
+<div id="parte2">
+    <h1>Segundo ejercicio de fechas</h1><br><br>
+    <label for="fecha">Indica el mes en valor numérico</label>
+    <input type="text" id="mes">
+    <label for="hora">Indica el año</label>
+    <input type="text" id="anyo">
+    <input type="submit" id="bot2" value="Saca el calendario">
+</div>
+<br><br>
+<div id="parte3">
+    <h1>Tercer ejercicio de fechas</h1><br><br>
+    <label for="fecha">Indica la fecha de pago</label>
+    <input type="date" id="data">
+    <label for="hora">Indica los días de demora</label>
+    <input type="text" id="deis">
+    <input type="submit" id="bot3" value="Calcula la nueva fecha de pago">
+    <p id="parraf3"></p>
+</div>
+<div id="parte4">
+    <h1>Cuarto ejercicio de fechas</h1><br><br>
+    <input type="submit" id="bot4" value="Cronometro">
+    <p id="parraf4"></p>
+</div>
+<div id="parte5">
+    <h1>Quinto ejercicio de fechas</h1><br>
+    <p id="parraf5"></p><br>
+    <input type="datetime-local" id="alarm">
+    <input type="submit" id="bot5" value="Poner alarma">
+</div>
+<script src="fechas.js"></script>
+</body>
+</html>
