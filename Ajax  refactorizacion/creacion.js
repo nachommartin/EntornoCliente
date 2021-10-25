@@ -24,11 +24,16 @@ formu.addEventListener('submit', (e)=> {
     dni: dni.value,
     edad: calcularEdad(date.value)
     }
-    const peticion=new XMLHttpRequest();
-    peticion.open('POST', 'http://localhost:3000/users/');
-    peticion.setRequestHeader('Content-type', 'application/json');
-    peticion.send(JSON.stringify(nuevoUsuario));        
+
+    fetch('http://localhost:3000/users/', {
+        method: 'POST',
+        headers: new Headers({
+          "Content-Type": 'application/json',
+          body: JSON.stringify(nuevoUsuario),
+        })
+    })
 })
+
 
 
 nombre.addEventListener('change', (e) =>{
@@ -89,4 +94,6 @@ function calcularEdad(fnac) {
         edad--;
     }
 
-    return edad;}
+    return edad;
+    }
+
