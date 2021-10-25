@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "name": "Nacho",
+      "tfn": "665165862",
+      "dni": "30250132A",
+      "edad": 35,
+      "id": 1
+    },
+    {
+      "name": "Gustavo",
+      "tfn": "956234518",
+      "dni": "28901234H",
+      "edad": 33,
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "titulo": "La levedad del ser",
+      "autor": "Nacho",
+      "contenido": "La insoportable levedad del ser (en checo, Nesnesitelná lehkost bytí) es una novela del escritor checo Milan Kundera, publicada en 1984. Ambientada en Praga durante 1968, La insoportable levedad del ser trata de un hombre y sus dudas existenciales en torno a la vida en pareja, convertidas en conflictos sexuales y afectivos. La novela relata escenas de la vida cotidiana trazadas con un profundo sentido trascendental: la inutilidad de la existencia y la necesidad del eterno retorno de Nietzsche por el que todo lo vivido ha de repetirse eternamente, solo que al volver lo hace de un modo diferente, ya no fugaz como ocurrió en el principio. "
+    },
+    {
+      "id": 2,
+      "titulo": "El tambor en Danzig",
+      "autor": "Gustavo",
+      "contenido": "El tambor de hojalata (en alemán: Die Blechtrommel) es una novela escrita por el premio Nobel alemán Günter Grass, publicada en 1959. Sus páginas relatan la vida de Oscar Matzerath, un niño que vive durante la época de la Segunda Guerra Mundial (1939 - 1945), en una narración con tintes macabros e infantiles. El libro narra los momentos decisivos en la vida de Oscar, que lo llevarán, a los 29 años de edad, a ser internado en un sanatorio psiquiátrico."
+    },
+    {
+      "id": 3,
+      "titulo": "Si esto es una persona",
+      "autor": "Nacho",
+      "contenido": "Si esto es un hombre (en italiano original, Se questo è un uomo) es un relato escrito por Primo Levi entre diciembre de 1945 y enero de 1947, en el que se cuenta la experiencia cotidiana propia del autor, de ascendencia judía, durante su cautiverio en el campo de exterminio nazi de Auschwitz, durante la Segunda Guerra Mundial. "
+    },
+    {
+      "id": 4,
+      "titulo": "Delito y castigo",
+      "autor": "Gustavo",
+      "contenido": "Crimen y castigo1​(en ruso, Преступле́ние и наказа́ние, romanización Prestupléniye i nakazániye) es una novela de carácter psicológico escrita por el autor ruso Fiódor Dostoyevski. Fue publicada por primera vez, por entregas, en la revista El mensajero ruso, en 1866, en doce partes, y publicada después como libro.2​3​ Junto con Guerra y paz de León Tolstói, se considera una de las novelas más influyentes e internacionales de la literatura rusa.4​ Asimismo, los diálogos mantenidos entre el protagonista, Raskólnikov, y el inspector de policía son considerados por algunos autores, como el prestigioso literato Stefan Zweig, una de las cimas de la literatura universal. "
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "autor": "Gustavo",
+      "postId": 1,
+      "contenido": "Este contenido es genial",
+      "fecha": "13/11/2020"
+    },
+    {
+      "id": 2,
+      "autor": "Nacho",
+      "postId": 2,
+      "contenido": "Me ha gustado mucho",
+      "fecha": "22/03/2021"
+    },
+    {
+      "id": 3,
+      "autor": "Gustavo",
+      "postId": 2,
+      "contenido": "Me alegro que te gustara Nacho :)",
+      "fecha": "23/03/2021"
+    },
+    {
+      "id": 4,
+      "autor": "Gustavo",
+      "postId": 3,
+      "contenido": "Quiero saber más!!!",
+      "fecha": "05/02/2021"
+    },
+    {
+      "autor": "Nacho",
+      "postId": "4",
+      "contenido": "Bien hecho Gus!",
+      "fecha": "21/10/2021",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "Nacho"
+  }
+}

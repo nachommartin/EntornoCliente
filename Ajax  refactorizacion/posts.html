@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <style>   
+        body {background-color: indianred;}
+        div {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;}
+        #titulo {  font-size: 150%;  text-decoration: underline;}
+        #cuerpo {text-align: left;}
+        #autor {text-align: left; font-weight: bold;}
+
+    </style>
+</head>
+<body>
+    <div id="titulo"></div>
+    <br>
+    <div id="cuerpo"></div>
+    <br>
+    <div id="autor"></div>
+    <br>
+    <div id="comentario">
+        <h3>Comentarios</h3>
+    </div>
+    <br>
+    <div id="anadir">
+        <label for="nombre">Añade tu comentario</label><br>
+        <textarea id="tocho" rows="20" cols="120"></textarea><br>
+        <label for="nombre">¿Quién eres?</label><br>
+        <select id="who" required></select><br><br>
+        <input type="submit" value="Crear" id="boton">
+    </div>
+    <script src="posts.js">S</script>
+</body>
+</html>
