@@ -27,11 +27,21 @@ formu.addEventListener('submit', (e)=> {
 
     fetch('http://localhost:3000/users/', {
         method: 'POST',
-        headers: new Headers({
+        headers: {
           "Content-Type": 'application/json',
-          body: JSON.stringify(nuevoUsuario),
-        })
+        },
+        body: JSON.stringify(nuevoUsuario),
     })
+    .then(response=> {
+        if (response.ok){
+            return response.json()
+        }
+        return Promise.reject(response) 
+          
+    })
+    .catch(err => {
+        console.log('Error en la petición HTTP: '+err.message);
+      })
 })
 
 

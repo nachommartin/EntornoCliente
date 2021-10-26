@@ -1,6 +1,7 @@
 const url = window.location.search;
 const urlparametros = new URLSearchParams(url);
 const id = urlparametros.get('id');
+/*
 let peticion = new XMLHttpRequest();
 peticion.open('GET', 'http://localhost:3000/posts/'+id); 
 peticion.send();
@@ -17,6 +18,28 @@ peticion.addEventListener('load', ()=>{
     autor.appendChild(author);
 
 })
+*/
+document.addEventListener('load', async ()=>{ 
+try {
+    let post = await getData(id)
+    console.log(post)
+    let titulo= document.querySelector("#titulo");
+    let cuerpo= document.querySelector("#cuerpo");
+    let autor= document.querySelector("#autor");
+    let title = document.createTextNode(post.titulo);
+    titulo.appendChild(title);
+    let content = document.createTextNode(post.contenido);
+    cuerpo.appendChild(content);
+    let author = document.createTextNode(post.autor);
+    autor.appendChild(author);
+   
+  } catch (err) {
+      console.error(err)
+    return;
+  }
+})
+
+
 
 let accesoComentario= new XMLHttpRequest();
 accesoComentario.open('GET', 'http://localhost:3000/comments?postId='+id); 
@@ -130,3 +153,8 @@ function validacion(){
     }
 
 
+async function getData(idUser) {
+    const response = await fetch('http://localhost:3000/comments?postId=' + idUser)
+    const posts = await response.json()
+    return posts
+    }
